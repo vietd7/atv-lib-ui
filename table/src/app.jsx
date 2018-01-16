@@ -1,6 +1,7 @@
 import React from "react";
 import {connect} from "react-redux"
-
+import {Table, TableHeader, Item, TableContent} from './ui/common'
+require('./style.scss')
 class Application extends React.Component {
     constructor(props) {
         super(props);
@@ -8,7 +9,29 @@ class Application extends React.Component {
 
     render() {
         return (<div>
-            {this.props.test}
+            <Table>
+                <TableHeader>
+                    <Item width="20%">Tên tài khoản</Item>
+                    <Item width="20%">Số điện thoại</Item>
+                    <Item width="30%">Vàng hiện tại</Item>
+                    <Item width="30%">Vàng Tổng nạp</Item>
+                    <Item width="20%">Giao dịch</Item>
+                </TableHeader>
+                <TableContent>
+                    <Item width="20%">Tên tài khoản</Item>
+                    <Item width="20%">Số điện thoại</Item>
+                    <Item width="30%">Vàng hiện tại</Item>
+                    <Item width="30%">Vàng Tổng nạp</Item>
+                    <Item width="20%">Giao dịch</Item>
+                </TableContent>
+                <TableContent>
+                    <Item width="20%">Tên tài khoản</Item>
+                    <Item width="20%">Số điện thoại</Item>
+                    <Item width="30%">Vàng hiện tại</Item>
+                    <Item width="30%">Vàng Tổng nạp</Item>
+                    <Item width="20%">Giao dịch</Item>
+                </TableContent>
+            </Table>
         </div>)
     }
 }
