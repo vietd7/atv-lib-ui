@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from "react-redux"
-import {Table, TableHeader, Item, TableContent} from './ui/common'
+import {Table, TableHeader, Item, TableContent} from 'atv-table'
 // require('./style.scss')
 class Application extends React.Component {
     constructor(props) {

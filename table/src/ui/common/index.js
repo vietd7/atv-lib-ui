@@ -1,3 +1,5 @@
+require('./style.scss')
+
 export * from './table';
 export * from './tableHeader';
 export * from './TableContent';

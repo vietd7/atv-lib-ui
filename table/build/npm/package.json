@@ -1,7 +1,8 @@
 {
     "name": "atv-table",
-    "version": "1.0.0",
+    "version": "1.0.8",
     "description": "table-ui",
+    "main": "index.js",
     "scripts": {
         "test": "webpack-dev-server -d --config=./build/conf/webpack.config.js --hot",
         "build:prod": "cross-env NODE_ENV=production webpack -p  --config=./build/conf/webpack.config.js"

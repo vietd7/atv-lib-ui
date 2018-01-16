@@ -2,8 +2,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 let Path = require("path")
 
 module.exports = {
-    // entry: ['./src/index.jsx'],
-    entry: ['./src/ui/common/index.js'],
+    entry: ['./src/index.jsx'],
     module: {
         rules: [
             {
@@ -23,8 +22,11 @@ module.exports = {
                 test: /\.(eot|svg|ttf|woff|woff2)$/,
                 loader: 'file-loader?name=/fonts/[name].[ext]&limit=10000'
             }
+
         ]
+
     },
+
     resolve: {
         extensions: [
             '*',
@@ -37,18 +39,14 @@ module.exports = {
     },
     output: {
         path: Path.resolve("build/dist"),
-        // filename: "bundle.js",
-        filename: "index.js",
+        filename: "bundle.js",
         // publicPath: "/test/",
-        // library: 'shared-components',
-        // libraryTarget: 'umd'
-
 
     },
     devServer: {
         // contentBase: './assets/',
-        port: 7777,
-
+        port: 6789,
+        host: "0.0.0.0",
         // publicPath: "/test/",
         hot: true,
         contentBase: "./assets",
@@ -58,7 +56,7 @@ module.exports = {
         //     chunks: false
         // },
         disableHostCheck: true,
-        // inline: true,
+        inline: true,
     },
     plugins: [new CopyWebpackPlugin([
             {

@@ -1,7 +1,7 @@
 {
-    "name": "atv-table",
+    "name": "test",
     "version": "1.0.0",
-    "description": "table-ui",
+    "description": "test",
     "scripts": {
         "test": "webpack-dev-server -d --config=./build/conf/webpack.config.js --hot",
         "build:prod": "cross-env NODE_ENV=production webpack -p  --config=./build/conf/webpack.config.js"
@@ -21,6 +21,7 @@
     "license": "ISC",
     "readmeFilename": "README.md",
     "dependencies": {
+        "atv-table": "^1.0.4",
         "copy-webpack-plugin": "^4.2.0",
         "css-loader": "^0.28.7",
         "node-sass": "^4.5.3",
