@@ -1,8 +1,8 @@
 import React from "react";
 import {connect} from "react-redux"
-import {Table, TableHeader, Item, TableContent} from './ui/common'
+import {Table, TableHeader, Item, TableContent} from './'
 // require('./style.scss')
-class Application extends React.Component {
+class Test extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -37,4 +37,4 @@ class Application extends React.Component {
 }
 const mapStateToProps = (state, ownProps) => ({test: state.utils.test});
 const mapDispatchToProps = (dispatch, ownProps) => ({});
-export default connect(mapStateToProps, mapDispatchToProps)(Application);
+export default connect(mapStateToProps, mapDispatchToProps)(Test);

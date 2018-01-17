@@ -2,8 +2,8 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 let Path = require("path")
 
 module.exports = {
-    // entry: ['./src/index.jsx'],
-    entry: ['./src/ui/common/index.js'],
+    entry: ['./src/index.jsx'],
+    // entry: ['./src/ui/common/index.js'],
     module: {
         rules: [
             {
@@ -37,13 +37,11 @@ module.exports = {
     },
     output: {
         path: Path.resolve("build/dist"),
-        // filename: "bundle.js",
-        filename: "index.js",
+        filename: "bundle.js",
+        // filename: "index.js",
         // publicPath: "/test/",
-        // library: 'shared-components',
-        // libraryTarget: 'umd'
-
-
+        library: 'shared-components',
+        libraryTarget: 'umd'
     },
     devServer: {
         // contentBase: './assets/',
