@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from "react-redux"
-import Test from './ui/table/test'
+import Test from './ui/paginator/test.js'
 // require('./style.scss')
 class Application extends React.Component {
     constructor(props) {
