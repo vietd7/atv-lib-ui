@@ -8,6 +8,22 @@ class Paginator extends React.Component {
             currentPage: 1
         }
     }
+
+    componentWillReceiveProps({totalPage, currentPage}){
+      this.setState({
+          totalPage : totalPage,
+          // currentPage : 1
+      })
+      if(totalPage !== this.state.totalPage){
+          this.setState({currentPage:1})
+      }
+      if(currentPage){
+          this.setState({
+              currentPage : currentPage || 1
+          })
+      }
+  }
+
     changePage(page) {
         if ((page > 0) && (page <= this.state.totalPage)) {
             this.setState({

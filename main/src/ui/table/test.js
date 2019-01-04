@@ -17,7 +17,7 @@ class Test extends React.Component {
                     <Item width="30%">Vàng Tổng nạp</Item>
                     <Item width="20%">Giao dịch</Item>
                 </TableHeader>
-                <TableContent>
+                <TableContent >
                     <Item width="20%">Tên tài khoản</Item>
                     <Item width="20%">Số điện thoại</Item>
                     <Item width="30%">Vàng hiện tại</Item>

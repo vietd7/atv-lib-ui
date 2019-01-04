@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Item = (props) => {
-    return (<li style={{width:props.width}}>{props.children}</li>)
+    return (<td className={props.className} style={{width:props.width}}>{props.children}</td>)
 }
 export {
     Item

@@ -36,12 +36,13 @@ module.exports = {
         ]
     },
     output: {
-        path: Path.resolve("build/dist"),
+        // path: Path.resolve("build/dist"),
+        path: Path.resolve("build/npm/paginator"),
         // filename: "bundle.js",
         filename: "index.js",
         // publicPath: "/test/",
-        // library: 'shared-components',
-        // libraryTarget: 'umd'
+        library: 'shared-components',
+        libraryTarget: 'umd'
     },
     devServer: {
         // contentBase: './assets/',

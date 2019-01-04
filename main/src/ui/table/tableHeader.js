@@ -2,7 +2,7 @@ import React from 'react'
 
 const TableHeader = (props) => {
 
-    return (<ul className="table-header">{props.children}</ul>)
+    return (<tr className="table-header">{props.children}</tr>)
 }
 export {
     TableHeader
